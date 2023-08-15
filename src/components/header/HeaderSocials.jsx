@@ -5,13 +5,16 @@ import { FaGithub } from "react-icons/fa";
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com" rel="noopener noreferrer">
+      <a
+        href="www.linkedin.com/in/bryan-glennardy-41923922a"
+        rel="noopener noreferrer"
+      >
         <BsLinkedin />
       </a>
-      <a href="https://github.com" rel="noopener noreferrer">
+      <a href="https://github.com/BryanGlennardy" rel="noopener noreferrer">
         <FaGithub />
       </a>
-      <a href="https://instagram.com" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/brya9xs/" rel="noopener noreferrer">
         <BsInstagram />
       </a>
     </div>

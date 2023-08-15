@@ -7,6 +7,7 @@ import Portofolio from "./components/portofolio/Portofolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Experience from "./components/experience/Experience";
+import { Helmet } from "react-helmet-async";
 
 const App = () => {
   return (
