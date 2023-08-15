@@ -1,0 +1,84 @@
+.portofolio__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.portofolio__items {
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.portofolio__items:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.portofolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portofolio__items h3 {
+  margin: 1.2rem 0 0;
+}
+
+.portofolio__items h5 {
+  margin: 0 0 2rem;
+  color: var(--color-light);
+}
+
+.portofolio__items h4 {
+  margin: 0 0 1rem;
+  color: var(--color-more-light);
+}
+
+.portofolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
+}
+
+section#portofolio img {
+  height: 200px;
+  width: 100%;
+}
+
+.languages__list {
+  display: flex;
+  flex-wrap: wrap; /* Ini akan membuat elemen pindah ke baris baru saat ruang horizontal penuh */
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.languages__list li {
+  background-color: var(--color-primary-variant);
+  margin: 5px 5px 5px 0; /* Jarak antara elemen */
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+}
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ================== */
+@media screen and (max-width: 1024px) {
+  .portofolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ===================== MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px) {
+  .portofolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 95%; /* Atur lebar kontainer sesuai kebutuhan */
+  }
+}

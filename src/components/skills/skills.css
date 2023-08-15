@@ -1,0 +1,124 @@
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.skills__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 7rem;
+}
+
+.skills__container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.skills__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.skills__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.skills__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.skills__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ================== */
+@media screen and (max-width: 1024px) {
+  /* .skills__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .skills__content {
+    padding: 1rem;
+  } */
+
+  .skills__skills {
+    grid-template-columns: 1fr; /* Mengubah tata letak menjadi satu kolom */
+    gap: 4rem; /* Menambahkan jarak antara grup konten */
+    text-align: center; /* Mengatur teks ke tengah pada tampilan satu kolom */
+  }
+
+  .skills__container > div {
+    width: 80%; /* Mengurangi lebar kontainer */
+    padding: 2rem; /* Mengatur padding untuk tampilan satu kolom */
+    margin: 0 auto; /* Mengatur margin menjadi otomatis untuk tengah */
+  }
+
+  .skills__content {
+    display: block; /* Mengubah tata letak konten menjadi satu kolom */
+    row-gap: 2rem; /* Mengatur jarak antar konten */
+  }
+
+  .skills__details {
+    display: flex; /* Mengembalikan tata letak detail ke tampilan awal */
+    gap: 1rem;
+  }
+
+  .skills__details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+  }
+}
+
+/* ===================== MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px) {
+  /* .skills__container {
+    gap: 1rem;
+  }
+
+  .skills__container > div {
+    width: 95%;
+    padding: 2rem 1rem;
+  } */
+
+  .skills__container {
+    gap: 1rem; /* Menambahkan jarak antara kontainer */
+    margin-top: 100rem;
+  }
+
+  .skills__container > div {
+    width: 95%; /* Mengurangi lebar kontainer */
+    padding: 2rem 1rem; /* Mengatur padding untuk tampilan satu kolom */
+  }
+
+  .skills__details {
+    display: flex; /* Mengembalikan tata letak detail ke tampilan awal */
+    flex-direction: column; /* Mengubah tata letak detail menjadi satu kolom */
+    align-items: center; /* Mengatur teks menjadi tengah pada tampilan satu kolom */
+    gap: 1rem; /* Menambahkan jarak antara detail */
+  }
+
+  .skills__details-icon {
+    margin-top: 1rem; /* Mengurangi margin atas pada ikon */
+  }
+}

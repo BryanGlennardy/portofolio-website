@@ -1,0 +1,100 @@
+.experience__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Membagi menjadi 2 kolom */
+  gap: 2rem; /* Jarak antar elemen */
+}
+
+.experience__container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.experience__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience__point {
+  position: relative;
+  padding: 1.5rem 1rem;
+  background-color: var(--color-bg-variant);
+  transition: var(--transition);
+}
+
+.experience__content {
+  display: flex;
+  gap: 2rem;
+  align-items: center; /* Mengatur vertikal center */
+  margin-bottom: 2rem;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+  font-size: 4rem;
+  flex-shrink: 0; /* Menambahkan properti flex-shrink */
+}
+
+.experience__point h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience__point h5 {
+  color: var(--color-more-light);
+  margin-bottom: 1rem;
+}
+
+.experience__point p {
+  color: var(--color-light);
+}
+
+.date {
+  display: flex;
+  flex-wrap: wrap; /* Ini akan membuat elemen pindah ke baris baru saat ruang horizontal penuh */
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.date h4 {
+  background-color: var(--color-primary-variant);
+  margin: 5px 5px 5px 0; /* Jarak antara elemen */
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+}
+
+.experience__date {
+  display: flex;
+  flex-wrap: wrap; /* Ini akan membuat elemen pindah ke baris baru saat ruang horizontal penuh */
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.experience__date h4 {
+  background-color: var(--color-primary-variant);
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ================== */
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ===================== MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}

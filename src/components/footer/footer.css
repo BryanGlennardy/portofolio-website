@@ -1,0 +1,12 @@
+#footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section#footer {
+  margin-top: 5vh;
+}
+
+.footer__copyright {
+  color: var(--color-primary);
+}
